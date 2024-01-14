@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number=prompt("nhập số có 4 chữ sô")
+        if(number.length !== 4){
+            console.log("sai r nhập lại số đi ");
+        }else{
+            let thousands = parseInt(number[0]);
+            let hundreds = parseInt(number[1]);
+            let tens = parseInt(number[2]);
+            let units = parseInt(number[3]);
+        
+            console.log("Chữ số hàng nghìn:", thousands);
+            console.log("Chữ số trăm:", hundreds);
+            console.log("Chữ số chục:", tens);
+            console.log("Chữ số đơn vị:", units);
+        }
+    </script>
+</body>
+</html>

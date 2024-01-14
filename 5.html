@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("cho phương trình ax+b=0");
+        let a=+prompt("nhap so a");
+        let b=+prompt("nhap so b");
+        if(a==0 && b==0){
+            console.log("phương trình vô số nghiệm");
+        }else if(a==0 && b<0 || b>0){
+            console.log("phương trình vô nghiệm");
+        }else{
+            let kq= -b/a
+            console.log("phương trình có nghiệm là ", kq);
+        }
+    </script>
+</body>
+</html>

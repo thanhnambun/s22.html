@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("cho phương trình bậc 2 : ax^2+bx+c=0");
+        let a=+prompt("nhap so a");
+        let b=+prompt("nhap so b");
+        let c=+prompt("nhap so c");
+        if(a!=0){
+            let denta = b^2 -4*a*c;
+            if(denta<0){
+                console.log("phương trình vô nghiệm");
+            }else{
+                if(denta=0){
+                    console.log("phương trình có 1 nghiệm",-b/(2*a) );
+                }else{
+                    console.log("phương trình có x1 nghiệm",(-b+Math.SQRT(denta))/(2*a) );
+                    console.log("phương trình có x2 nghiệm",(-b-Math.SQRT(denta))/(2*a) );
+                }
+            }
+        }
+    </script>
+</body>
+</html>
